@@ -5,19 +5,21 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
   <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
-  <link rel="stylesheet" type="text/css" href="css/styles.css" />
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  <link rel="stylesheet" type="text/css" href="css/styles.css"/>
   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
   <title>Torpenn GUIDE</title>
 </head>
 
 <body>
-  <div class="d-flex flex-row flex-column-fluid">
+<div class="d-flex flex-column flex-root">
+  <div class="d-flex flex-row flex-column-fluid page">
     <div id="sidebar" class="d-flex flex-row-auto flex-column">
-      <div class="aside aside-left aside-fixed d-flex flex-column flex-row-auto">
+      <div class="aside aside-left aside-fixed d-flex flex-column flex-row-auto vh-100">
         <div class="brand flex-column-auto">
-          <i class="material-icons md-30menu-icon ">sports_hockey</i>
-          <span>Hockey</span>
+          <i class="material-icons md-30 menu-icon ">sports_hockey</i>
+          <span>Brest Hockey Club</span>
         </div>
         <div class="aside-menu-wrapper flex-column-fluid">
           <div class="aside-menu scroll ps ps--active-y">
@@ -29,7 +31,10 @@
                 <a class="nav-link" href="#">Patins</a>
               </li>
               <li class="nav-item">
-                <a class="nav-link" href="#">Crosses</a>
+                <a class="nav-link" href="#crosses">Crosses</a>
+              </li>
+              <li class="nav-item">
+                <a href="#contacts" class="nav-link">Contacts</a>
               </li>
             </ul>
           </div>
@@ -37,17 +42,53 @@
       </div>
     </div>
     <div class="d-flex flex-column flex-row-fluid wrapper">
-      <div class="navbar navbar-light shadow-sm header">
+      <div class="header header-fixed">
         <div class="container d-flex justify-content-between">
           <a href="#" class="navbar-brand d-flex align-items-center"><strong>Torpenn Guide</strong></a>
         </div>
       </div>
-      <div class="container">
+      <div class="content d-flex flex-column flex-column-fluid container">
         <div class="row">
           <div class="col-lg-12">
             <div class="card card-custom gutter-b">
-              <div class="card-header border-0 pt-6">
-                <h1>Bienvenue !</h1>
+              <div class="card-body">
+                Bienvenue sur la page Torpenn Guide. Ce site a pur le but de vous orienter quand vous commencez le
+                hockey sur glace. Vous trouvez ici les conseils pour le choiox d'équipement, les liens pour les sites
+                qui vendent l'equipement, les contactes utiles et d'autres astuces.
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-custom gutter-b">
+              <div class="card-header pt-6">
+                <div class="card-title">
+                  <h3 id="crosses" class="card-label">Crosses</h3>
+                </div>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Comment choisir ma crosse ?</li>
+                  <li> Comment definir si je suis gaucher ou droitier ?</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="card card-custom gutter-b">
+              <div class="card-header pt-6">
+                <div class="card-title">
+                  <h3 id="contacts" class="card-label"> Contacts </h3>
+                </div>
+              </div>
+              <div class="card-body">
+                <ul>
+                  <li>Isabelle Mer</li>
+                  <li>Kiki Cleach</li>
+                </ul>
               </div>
             </div>
           </div>
@@ -55,12 +96,19 @@
       </div>
     </div>
   </div>
-  <!-- jQuery CDN - Slim version (=without AJAX) -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-  <!-- Popper.JS -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
-  <!-- Bootstrap JS -->
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
-</body>
+</div>
 
+<!-- jQuery CDN - Slim version (=without AJAX) -->
+<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+<!-- Popper.JS -->
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js"
+        integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ"
+        crossorigin="anonymous"></script>
+<!-- Bootstrap JS -->
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js"
+        integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm"
+        crossorigin="anonymous"></script>
+</body>
 </html>
