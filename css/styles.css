@@ -9,8 +9,8 @@ body {
   flex-direction: column;
   background: #EAF1F7;
   height: 100%;
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   font-weight: 400;
 }
 
@@ -28,7 +28,7 @@ body {
 .flex-row-fluid {
   -webkit-box-flex: 1;
   flex: 1 auto;
-  -ms-flex: 1 0 0px;
+  -ms-flex: 1 0 0;
   min-width: 0;
 }
 
@@ -81,6 +81,17 @@ body {
   background-color: #1F2433;
 }
 
+@media (max-width: 667px) {
+  .aside {
+    z-index: 1001;
+    left: -295px;
+  }
+
+  .wrapper {padding-left: 0 !important;}
+
+  .header {left: 0 !important;}
+}
+
 /* ############ CONTENT ############*/
 .wrapper {
   padding-left: 265px;
@@ -95,7 +106,7 @@ body {
   justify-content: space-between;
   display: flex;
   left: 265px;
-  box-shadow: 0px 0px 40px 0px rgba(82, 63, 105, 0.1);
+  box-shadow: 0 0 40px 0 rgba(82, 63, 105, 0.1);
 }
 
 /* ############ HEADER ############*/
@@ -107,6 +118,7 @@ body {
 }
 
 .header a {color: #181c32;}
+
 .content {
   padding: 25px 0;
 }
@@ -120,11 +132,10 @@ body {
 }
 
 
-
 /* ############ CARD ############*/
 .card-custom {
-  box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
-  -webkit-box-shadow: 0px 0px 30px 0px rgba(82, 63, 105, 0.05);
+  box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+  -webkit-box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
   border: 0;
 }
 
